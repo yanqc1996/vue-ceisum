@@ -15,10 +15,10 @@
       })
     */
 
-    // 局部组件引用
+    // 局部组件引用(可在main.js中全局引用)
     import Cesium from 'cesium/Cesium'
     // noinspection ES6UnusedImports
-    import widget from 'cesium/Widgets/widgets.css'
+    import widget from 'cesium/Widgets/widgets.css'//样式引入
     export default {
         name: "cesiumContainer",
         mounted () {
