@@ -2,7 +2,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 const path = require('path')
 
-const debug = process.env.NODE_ENV !== 'production'
 let cesiumSource = './node_modules/cesium/Source'
 let cesiumWorkers = '../Build/Cesium/Workers'
 module.exports = {

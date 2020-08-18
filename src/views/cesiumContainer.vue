@@ -16,20 +16,20 @@
     */
 
     // 局部组件引用(可在main.js中全局引用)
-    import Cesium from 'cesium/Cesium'
-    // noinspection ES6UnusedImports
-    import widget from 'cesium/Widgets/widgets.css'//样式引入
+    // import Cesium from 'cesium/Cesium'
+    // // noinspection ES6UnusedImports
+    // import 'cesium/Widgets/widgets.css'//样式引入
     export default {
         name: "cesiumContainer",
         mounted () {
             this.$nextTick(() => {
-                this.cesiumInit()
+                 let viewer = new Cesium.Viewer('cesiumContainer')
             })
         },
         methods: {
             cesiumInit(){
                 let viewer = new Cesium.Viewer('cesiumContainer', {
-                    terrainProvider: Cesium.createWorldTerrain(),
+                    // terrainProvider: Cesium.createWorldTerrain(),
                     scene3DOnly: true,//仅渲染3D部分，减少GPU内存
                     selectionIndicator: false,//选择指示器
                     baseLayerPicker: false,//基本图层选择器

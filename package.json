@@ -10,7 +10,7 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "cesium": "^1.59.0",
+    "cesium": "^1.63.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
